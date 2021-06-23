@@ -1,0 +1,5 @@
+<input #cityname>
+<span *ngIf='didyouMean'>
+    Did you mean <a href='#' (click)="didYouMeanClick(cityname)">{{didyouMean}}</a>?
+</span>
+<button (click)="search(cityname)">Search</button>
